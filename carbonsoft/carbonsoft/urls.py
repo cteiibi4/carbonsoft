@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('mainapp.urls')),
     path('', mainapp.main),
+    path('ajax/', mainapp.data_edit)
 ]
