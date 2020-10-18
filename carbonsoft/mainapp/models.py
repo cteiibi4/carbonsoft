@@ -7,6 +7,6 @@ class User(models.Model):
 
 
 class SystemParametrs(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.CharField(max_length=20, verbose_name='Имя пользователя')
     cpu = models.IntegerField(verbose_name='Загруженность CPU')
 
